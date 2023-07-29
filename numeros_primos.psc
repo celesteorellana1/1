@@ -1,18 +1,17 @@
-Algoritmo anio_bisiesto
-	Definir anio Como Entero
-	Escribir "Ingresa un año"
-	Leer anio
-	Si (anio % 4 = 0) Entonces
-		Si (anio % 100 = 0) Entonces
-			Si (anio % 400 = 0) Entonces
-				Escribir "El año es bisiesto"
-			Sino
-				Escribir "El año no es bisiesto"
-			FinSi
-		Sino
-			Escribir "El año es bisiesto"
+Algoritmo numeros_primos
+	Definir numero Como Entero
+	Definir contador Como Entero
+	contador <- 0
+	Escribir "Ingresa un nÃºmero: "
+	Leer numero
+	Para i<-1 Hasta numero Con Paso 1 Hacer
+		Si (numero % i = 0) Entonces
+			contador <- contador + 1
 		FinSi
+	FinPara
+	Si contador = 2 Entonces
+		Escribir "El nÃºmero es primo"
 	Sino
-		Escribir "El año no es bisiesto"
+		Escribir "El nÃºmero no es primo"
 	FinSi
 FinAlgoritmo
